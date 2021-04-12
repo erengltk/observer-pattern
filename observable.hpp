@@ -1,8 +1,8 @@
 #pragma once
-
+#include<stdio.h>
 #include<string>
 #include<vector>
-
+using namespace std;
 template <typename> struct  Observer;
 
 template<typename T> //T is  type of the obejct thas been observed

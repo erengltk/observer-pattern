@@ -5,7 +5,11 @@
 class Person : public Observable<Person>
 {
     int age;
-public:
+public: 
+    Person(int age)
+    {
+    this->age=age;
+    }
     int get_age()
     {
         return age;
@@ -15,9 +19,8 @@ public:
         if(this->age==age) return;
         notify(*this,"age");
     }
-
 };
-struct ConsolePersonObserver : public Observer<Person>his->age=age;
+struct ConsolePersonObserver : public Observer<Person>
 {
 private:
     void field_changed(Person &source, const std::string &field_name) override
@@ -29,5 +32,11 @@ private:
 };
 int main()
 {
-    
+    Person person{10};
+    ConsolePersonObserver cpo;
+    person.subscribe(cpo);
+
+    person.set_age(32);
+    person.set_age(34);
+    person.unsubscribe(cpo);
 }
