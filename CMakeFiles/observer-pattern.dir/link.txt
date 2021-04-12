@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/observer-pattern.dir/observer-pattern.cpp.o -o observer-pattern 

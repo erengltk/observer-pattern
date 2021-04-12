@@ -1,0 +1,3 @@
+/home/eren/Desktop/design-patterns/CMakeFiles/edit_cache.dir
+/home/eren/Desktop/design-patterns/CMakeFiles/rebuild_cache.dir
+/home/eren/Desktop/design-patterns/CMakeFiles/observer-pattern.dir
